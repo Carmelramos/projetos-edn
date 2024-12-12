@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIMA - BRASIL</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>CLIMA BRASIL</h1>
+    <form>
+        <div>
+            <label for="city-name">Escolha a cidade:</label>
+            <select name="city" id="city">
+                <option value=" " disabled selected> Selecione a cidade</option>
+                <option value="Brasília">Brasília</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="Teresina">Teresina</option>
+                <option value="Macapá">Macapá</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+            </select>
+        </div>
+
+        <button type="button" id="enviar">Veja o clima</button>
+    </form>
+
+    <div id="result"></div>
+    
+    <script src="script4.js"></script>
+</body>
+</html>

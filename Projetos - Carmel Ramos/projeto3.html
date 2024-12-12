@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3 - Formulário de cadastro de produtos</title>
+    <link rel="stylesheet" href="./projeto3.css">
+</head>
+<body>
+    <main class="form-container">
+        <h1><n>CADASTRO DE PRODUTO</n></h1>
+        <br>
+        <form action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome do produto:</label>
+                    <input minlength="3" type="text" name="nome" id="nome" placeholder="Mínimo de 3 caracteres." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="codigo">Código do produto:</label>
+                    <input maxlength="6" type="text" name="codigo" id="codigo" placeholder="Máximo de 6 caracteres." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="categoria">Categoria:</label>
+                    <select name="categoria" id="categoria" required>
+                        <option value="" disabled selected></option>
+                        <option value="eletronicos">Eletrônicos</option>
+                        <option value="vestuario">Vestuário</option>
+                        <option value="alimentos">Alimentos</option>
+                        <option value="moveis">Móveis</option>
+                        <option value="brinquedos">Brinquedos</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantidade-estoque">Quantidade em estoque:</label>
+                    <input type="number" min="0" name="quantidade-estoque" id="quantidade-estoque" placeholder="Coloque a quantidade de produtos." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="preco">Preço:</label>
+                    <input type="number" placeholder="Apenas o valor em reais com duas casa decimais." min="0" step=".01" name="preco" id="preco" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Data de validade:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao">Descrição do Produto:</label>
+                    <textarea name="descricao" id="descricao" rows="4" cols="30" placeholder="Faça uma descrição objetiva do produto cadastrado. Exemplo: nome, tipo, modelo, cor, tamanho."></textarea>
+                </div>
+                
+                <br>
+
+                <input type="submit" name="submit" id="submit" value="Cadastrar produto" class="submit-btn">
+
+        </form>
+    </main>
+    
+    
+</body>
+</html>
